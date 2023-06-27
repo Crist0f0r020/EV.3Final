@@ -1,0 +1,46 @@
+
+{% extends 'core/layout.html' %}
+
+
+{% block content %}
+  <main>
+    {% load static %}
+    <br><br>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-item active">
+          <h1>GIGABYTE GTX 1070Ti <del style="color: red">$159.990</del> <p style="color: green;">$139.990</p></h1>
+          <img src="{% static 'img/imagen1.png' %}" class="d-block w-100" alt="uno">
+        </div>
+        <div class="carousel-item">
+          <h1>MSI RTX 3090 <del style="color: red">$1.159.990</del> <p style="color: green;">$1.099.990</p></h1>
+          <img src="{% static 'img/imagen22.png' %}" class="d-block w-100" alt="dos">
+        </div>
+        <div class="carousel-item">
+          <h1>HYPERX DDR4 <del style="color: red">$59.990</del> <p style="color: green;">$39.990</p></h1>
+          <img src="{% static 'img/imagen3.png' %}" class="d-block w-100" alt="tres">
+        </div>
+        <div class="carousel-item">
+          <h1>CRUCIAL DDR4 <del style="color: red">$28.990</del> <p style="color: green;">$15.990</p></h1>
+          <img src="{% static 'img/imagen44.png' %}" class="d-block w-100" alt="cuatro">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </main>
+
+{% endblock %}
